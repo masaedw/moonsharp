@@ -83,9 +83,13 @@ namespace MoonSharp.Interpreter.CoreLib
 			if (year == null)
 				throw new ScriptRuntimeException("field 'year' missing in date table");
 
-			return new DateTime(year.Value, month.Value, day.Value, hour, min, sec);
+			return new DateTime(year.Value, 1, 1)
+				.AddMonths(month.Value - 1)
+				.AddDays(day.Value - 1)
+				.AddHours(hour)
+				.AddMinutes(min)
+				.AddSeconds(sec);
 		}
-
 
 		private static int? GetTimeTableField(Table t, string key)
 		{
