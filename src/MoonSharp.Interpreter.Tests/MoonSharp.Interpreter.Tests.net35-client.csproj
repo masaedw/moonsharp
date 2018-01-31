@@ -134,6 +134,7 @@
     <Compile Include="EndToEnd\ProxyObjectsTests.cs" />
     <Compile Include="EndToEnd\StringLibTests.cs" />
     <Compile Include="EndToEnd\StructAssignmentTechnique.cs" />
+    <Compile Include="EndToEnd\OsTimeTests.cs" />
     <Compile Include="EndToEnd\TailCallTests.cs" />
     <Compile Include="EndToEnd\TimeZoneTests.cs" />
     <Compile Include="EndToEnd\UserDataEventsTests.cs" />
